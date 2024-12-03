@@ -1,0 +1,28 @@
+{
+  "name": "node-calculator",
+  "version": "1.0.0",
+  "description": "A simple node calculator",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "start": "node server.js",
+    "startdev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7"
+  },
+  "remoteRoot": "./",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  }
+}

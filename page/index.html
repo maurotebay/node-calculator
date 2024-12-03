@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/page/styles.css" />
+    <title>Nexton Basic Calculator</title>
+  </head>
+  <body>
+    <div>
+      <h1>Basic Calculator</h1>
+      <form id="calculator" method="post" enctype="multipart/form-data">
+        <input
+          type="text"
+          placeholder="Insert your equation here"
+          name="equation"
+          id="equation"
+          class="input"
+          required
+        />
+        <button type="submit" class="input">Calculate!</button>
+      </form>
+      <div id="resultContainer">
+        <h3 id="resultTitle"></h3>
+        <p id="result"></p>
+      </div>
+    </div>
+    <div>
+      <h4>Limitations:</h4>
+      <ul>
+        <li>Operations permited: +, -, *, /</li>
+        <li>Max. nested operations: 1. Meaning: (), not [] or {}</li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="/page/calculator.js"></script>
+  </body>
+</html>
