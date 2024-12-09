@@ -95,8 +95,8 @@ const parse = (eq) => {
       if (num) {
         eqArr.push(Number(num));
       } else if (
-        (char !== "(" && eqArr[i - 1] !== ")" && char !== "-") ||
-        (eqArr[i - 1] === "(" && char !== "-")
+        (char !== "(" && eqArr[i - 2] !== ")" && char !== "-") ||
+        (eqArr[i - 2] === "(" && char !== "-")
       ) {
         throw new Error("Syntax Error: Double operator detected");
       }
